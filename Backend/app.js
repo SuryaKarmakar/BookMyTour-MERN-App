@@ -5,6 +5,8 @@ const userRoutes = require("./routes/userRouters");
 
 const app = express();
 
+app.use(express.json());
+
 app.use("/api/v1/tours", tourRoutes);
 app.use("/api/v1/users", userRoutes);
 
